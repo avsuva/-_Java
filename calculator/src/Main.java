@@ -19,7 +19,7 @@ public class Main{
             String simbols = "+-*/";
             boolean value_5 = simbols.contains(symbol);
             while (true){
-            
+            if (arrSplit.length<3){throw new IOException("т.к. строка не является математической операцией");}
             if (((value_1 == false && value_2 == false) || (value_3 == false && value_4 == false))&& value_5==false){throw new IOException("т.к. строка не является математической операцией");}
             if (((value_1 == false && value_2 == true)||(value_1 == true && value_2 == false)) || ((value_3 == true && value_4 == false)||(value_3 == false && value_4 == true)))
             {throw new IOException("т.к. используются одновременно разные системы счисления");}
