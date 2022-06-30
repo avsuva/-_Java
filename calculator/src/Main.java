@@ -26,7 +26,6 @@ public class Main{
             int num1 = Integer.parseInt(num_1);
             int num2 = Integer.parseInt(num_2);
             System.out.println(operation(num1, num2, symbol));};
-
         if (value_3 == true && value_4 == true){
             int num1 = 0;
             int num2 = 0;
@@ -78,17 +77,13 @@ public class Main{
                     if (result2 == 8) {result_2 = "LXXX";}
                     if (result2 == 9) {result_2 = "XC";}}
                 System.out.println(result_2 + result_1);}}}
-
     public static int operation(int num1, int num2, String symbol){
         if (symbol.equals("+")) {return  add(num1, num2);}
         if (symbol.equals("-")) {return  sub(num1, num2);}
         if (symbol.equals("*")) {return  mul(num1, num2);}
         if (symbol.equals("/")) {return  div(num1, num2);}
-        return num1;
-    }
-
+        return num1;}
     public static int add(int num1, int num2) {return num1+num2;}
     public static int sub(int num1, int num2) {return num1-num2;}
     public static int mul(int num1, int num2) {return num1*num2;}
-    public static int div(int num1, int num2) {return num1/num2;}
-}
+    public static int div(int num1, int num2) {return num1/num2;}}
